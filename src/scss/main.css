@@ -1,0 +1,134 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button,
+input,
+input:focus,
+input:active,
+textarea {
+  outline: none;
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  font-size: inherit;
+}
+
+.container {
+  width: calc(100% - 20px);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  box-shadow: 1px 0 9px #edecec;
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgba(238, 238, 238, 0.48);
+}
+
+.btn {
+  background-color: green;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+.btn--full {
+  width: 100%;
+  display: block;
+  padding: 0.8rem 1rem;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+.card {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.card__task {
+  padding: 1rem;
+  background-color: rgba(238, 238, 238, 0.48);
+  position: relative;
+}
+.card__task:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.card__task h3 {
+  color: #505050;
+}
+.card__task p {
+  margin-top: 5px;
+  font-style: italic;
+  color: #aaa;
+}
+.card__task img {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card__task img:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+.card__task img:active {
+  transform: translateY(-50%) scale(0.7);
+}
+.card__task:hover {
+  cursor: pointer;
+}
+.card__task:hover img {
+  opacity: 1;
+}
+.card__task--reminder {
+  border-left: 6px solid green;
+}
+.card__form {
+  margin: 0.7rem 0;
+  font-size: 1.1rem;
+}
+.card__field:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.card__field input {
+  width: 100%;
+  background-color: #E8F0FE;
+  padding: 0.6rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.card__field--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+.card__field--flex input {
+  width: 25px;
+  height: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */
